@@ -16,3 +16,4 @@ Scenario: TC 02
     When Kullanici Java aratir
     Then Kullanici sonuclarin Java icerdigini test eder
     And Kullanici sayfayi kapatir
+

@@ -50,4 +50,14 @@ public class AmazonStepDefinitions {
     public void kullaniciSonuclarinJavaIcerdiginiTestEder() {
         Assert.assertTrue(amazonPage.result.getText().contains("Java"));
     }
+
+    @When("Kullanici {string} aratir")
+    public void kullaniciAratir(String arananNesne) {
+        amazonPage.searchbox.sendKeys(arananNesne,Keys.ENTER);
+    }
+
+    @Then("Kullanici sonuclarin {string} icerdigini test eder")
+    public void kullaniciSonuclarinIcerdiginiTestEder(String nesne) {
+        Assert.assertTrue(amazonPage.result.getText().contains(nesne));
+    }
 }

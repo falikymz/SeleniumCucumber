@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features",
         glue = {"stepDefinitions"},
-        tags="@senaryo1",
+        tags="@ConfigReader",
         dryRun = false
 )
 public class Runner {
